@@ -1,13 +1,13 @@
  const configServer = {
   rtmp: {
-    port: 1935,
+    port: process.env.PORT,
     chunk_size: 60000,
     gop_cache: true,
     ping: 30,
     ping_timeout: 60,
   },
   http: {
-    port: 8000,
+    port: process.env.PORT1,
     allow_origin: "*",
   },
 };
