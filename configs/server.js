@@ -1,4 +1,4 @@
- const configServer = {
+const configServer = {
   rtmp: {
     port: process.env.PORT,
     chunk_size: 60000,
@@ -12,4 +12,6 @@
   },
 };
 
-export default configServer
+export default configServer;
+
+
