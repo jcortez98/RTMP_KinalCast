@@ -6,10 +6,15 @@ const configServer = {
     ping: 30,
     ping_timeout: 60,
   },
-  https: {
+  http: {
     port: process.env.PORT1,
     allow_origin: "*",
   },
+  https: {
+    port: 443,
+    key:'./key.pem',
+    cert:'./cert.pem',
+  }
 };
 
 export default configServer;
