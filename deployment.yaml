@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rtmp-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rtmp
+  template:
+    metadata:
+      labels:
+        app: rtmp
+    spec:
+      containers:
+      - name: rtmp
+        image: jcortez98/nms_kinalcast_2024:latest
+        ports:
+        - containerPort: 1935

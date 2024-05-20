@@ -6,7 +6,7 @@ const configServer = {
     ping: 30,
     ping_timeout: 60,
   },
-  http: {
+  https: {
     port: process.env.PORT1,
     allow_origin: "*",
   },
